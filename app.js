@@ -62,6 +62,12 @@ function PageTransitions() {
     //     subject.value = '';
     //     message.value = '';
     // })
+    // const form = document.querySelector('.contact-form');
+    // form.addEventListener('submit', (event) => {
+    //     this.submit();
+    //     event.preventDefault();
+    //     form.reset();
+    // })
 }
 
 PageTransitions();
