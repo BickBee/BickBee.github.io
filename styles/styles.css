@@ -648,6 +648,7 @@ section {
 .port-text {
   padding: 2rem 0;
   text-align: center;
+  color: var(--text-colour);
 }
 
 .portfolios {
