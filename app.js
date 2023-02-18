@@ -40,34 +40,6 @@ function PageTransitions() {
         let element = document.body;
         element.classList.toggle('light-mode')
     })
-
-    // Remove Form Input
-    // const formbtn = document.getElementById('submit-btn');
-    // formbtn.addEventListener('click', () =>{
-    //     let name = document.getElementById('name');
-    //     let email = document.getElementById('email');
-    //     let subject = document.getElementById('subject');
-    //     let message = document.getElementById('message');
-
-    //     form = {
-    //         name: name.value,
-    //         email: email.value,
-    //         subject: subject.value,
-    //         message: message.value
-    //     };
-    //     form.submit();
-
-    //     name.value = '';
-    //     email.value = '';
-    //     subject.value = '';
-    //     message.value = '';
-    // })
-    // const form = document.querySelector('.contact-form');
-    // form.addEventListener('submit', (event) => {
-    //     this.submit();
-    //     event.preventDefault();
-    //     form.reset();
-    // })
 }
 
 PageTransitions();
