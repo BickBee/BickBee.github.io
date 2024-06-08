@@ -384,7 +384,7 @@ section {
   width: 90%;
 }
 .about-stats .progress-bars .progress-bar .progress-con .progress .CSharp {
-  width: 90%;
+  width: 95%;
 }
 .about-stats .progress-bars .progress-bar .progress-con .progress .Python {
   width: 85%;
@@ -396,10 +396,19 @@ section {
   width: 75%;
 }
 .about-stats .progress-bars .progress-bar .progress-con .progress .Javascript {
-  width: 70%;
+  width: 90%;
 }
 .about-stats .progress-bars .progress-bar .progress-con .progress .Java {
   width: 70%;
+}
+.about-stats .progress-bars .progress-bar .progress-con .progress .SQL {
+  width: 80%;
+}
+.about-stats .progress-bars .progress-bar .progress-con .progress .React {
+  width: 90%;
+}
+.about-stats .progress-bars .progress-bar .progress-con .progress .Git {
+  width: 90%;
 }
 
 .stat-title {
