@@ -263,7 +263,7 @@ section {
   color: var(--text-colour);
 }
 .header-content .right-header .name {
-  font-size: 3rem;
+  font-size: 2rem;
 }
 .header-content .right-header .name span {
   color: var(--color-secondary);
@@ -384,7 +384,7 @@ section {
   width: 90%;
 }
 .about-stats .progress-bars .progress-bar .progress-con .progress .CSharp {
-  width: 95%;
+  width: 90%;
 }
 .about-stats .progress-bars .progress-bar .progress-con .progress .Python {
   width: 85%;
@@ -396,19 +396,10 @@ section {
   width: 75%;
 }
 .about-stats .progress-bars .progress-bar .progress-con .progress .Javascript {
-  width: 90%;
+  width: 70%;
 }
 .about-stats .progress-bars .progress-bar .progress-con .progress .Java {
   width: 70%;
-}
-.about-stats .progress-bars .progress-bar .progress-con .progress .SQL {
-  width: 80%;
-}
-.about-stats .progress-bars .progress-bar .progress-con .progress .React {
-  width: 90%;
-}
-.about-stats .progress-bars .progress-bar .progress-con .progress .Git {
-  width: 90%;
 }
 
 .stat-title {
@@ -700,7 +691,6 @@ section {
   font-size: 1.5rem;
   color: var(--color-black);
   margin-bottom: 1.5rem;
-  text-align: center;
 }
 .portfolios .portfolio-item .hover-items .icons {
   display: flex;
