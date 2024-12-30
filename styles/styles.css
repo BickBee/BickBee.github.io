@@ -700,6 +700,7 @@ section {
   font-size: 1.5rem;
   color: var(--color-black);
   margin-bottom: 1.5rem;
+  text-align: center;
 }
 .portfolios .portfolio-item .hover-items .icons {
   display: flex;
