@@ -48,7 +48,7 @@ section {
   position: absolute;
   left: 0;
   top: 0;
-  padding: 3rem 18rem;
+  padding: 9rem 9rem;
 }
 
 .section {
@@ -214,9 +214,17 @@ section {
 /* About */
 .about-container {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 1fr 1fr; /* Equal columns */
   padding-top: 3.5rem;
   padding-bottom: 5rem;
+  gap: 2rem; /* Add some spacing between columns */
+}
+.about-container .left-about h4 {
+  font-size: 2rem;
+}
+.about-container .left-about p {
+  padding: 1rem 0rem 0rem 1rem;
+  font-size: 1rem;
 }
 
 .about-stats {
@@ -614,11 +622,6 @@ section {
   align-items: center;
 }
 
-/* Button - UPDATED to fit content and add more top margin */
-.btn-con {
-  margin-top: 2.5rem; /* ADDED: More space above the button */
-}
-
 .main-btn {
   border-radius: 30px;
   color: inherit;
@@ -744,9 +747,9 @@ section {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 2rem;
-  /* Center the experience boxes */
-  max-width: 100%;
-  margin: 0 auto;
+  width: 100%; /* Use full width of its column */
+  max-width: none; /* Remove any max-width constraint */
+  margin: 0; /* Remove auto margins that might be centering it */
 }
 
 .about-item {
@@ -756,8 +759,7 @@ section {
   padding: 1.5rem;
   background-color: var(--color-grey-5);
   box-shadow: var(--box-shadow-1);
-  /* Prevent boxes from going off screen */
-  max-width: 100%;
+  width: 100%; /* Take full width of grid cell */
 }
 
 .about-item:hover {
@@ -767,14 +769,13 @@ section {
 }
 
 .about-item .abt-text {
-  padding: 1.5rem;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: start;
 }
 
 .about-item .abt-text .large-text {
-  font-size: 3rem;
+  font-size: 2rem;
   font-weight: 700;
   color: var(--color-secondary);
 }
@@ -782,8 +783,7 @@ section {
 .about-item .abt-text .small-text {
   padding-top: 0.5rem;
   position: relative;
-  text-align: center;
-  font-size: 1.2rem;
+  font-size: 1rem;
   color: var(--color-white);
   letter-spacing: 2px;
 }
@@ -813,15 +813,15 @@ section {
 /* Media Queries */
 @media screen and (max-width: 1432px) {
   section {
-    padding: 7rem 11rem;
+    padding: 7rem 7rem;
   }
   .header-content .right-header {
     padding-right: 9rem;
   }
 }
-@media screen and (max-width: 1250px) {
+@media screen and (max-width: 1400px) {
   section {
-    padding: 7rem 6rem;
+    padding: 7rem 7rem;
   }
   .header-content .right-header {
     padding-right: 7rem;
@@ -839,6 +839,9 @@ section {
   .main-title h2 .bg-text {
     font-size: 6rem;
   }
+  .left-header .image {
+    height: 70%;
+  }
 }
 @media screen and (max-width: 1070px) {
   .about-container {
@@ -849,10 +852,9 @@ section {
   }
   .about-container .right-about {
     grid-template-columns: repeat(2, 1fr);
+    width: 100%; /* Full width on smaller screens */
+    margin: 0; /* No centering */
     padding-top: 2.5rem;
-    /* Center experience boxes */
-    width: 90%;
-    margin: 0 auto;
   }
   /* Keep headings consistent */
   .main-title h2 {
@@ -860,6 +862,9 @@ section {
   }
   .main-title h2 .bg-text {
     font-size: 5rem;
+  }
+  .left-header .image {
+    height: 60%;
   }
 }
 @media screen and (max-width: 970px) {
@@ -870,22 +875,44 @@ section {
     grid-template-columns: 1fr;
     padding-bottom: 6rem;
   }
+  .header-content .right-header {
+    padding-right: 3rem;
+    padding-left: 3rem;
+  }
+  .left-header {
+    padding-top: 6%;
+    align-items: start;
+    justify-content: center;
+  }
   .left-header .h-shape {
     display: none;
   }
   .left-header .image {
-    width: 90%;
+    width: 40%;
+    height: 80%;
     margin: 0 auto;
+    background-color: transparent;
+    border-radius: var(--br-sm-2);
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
-  /* Fix image aspect ratio on smaller screens */
   .left-header .image img {
-    aspect-ratio: 4/5;
+    width: 100%;
+    height: auto;
+    -o-object-fit: cover;
+       object-fit: cover;
+    border-radius: var(--br-sm-2);
   }
   .right-header {
     grid-row: 1;
+    padding-top: 5%;
     padding-right: 0;
     width: 90%;
     margin: 0 auto;
+    text-align: center;
+    align-items: center;
   }
   .header-content .right-header .name {
     font-size: 2.5rem;
@@ -927,11 +954,21 @@ section {
   }
   /* ADDED: Center text and improve mobile layout */
   .right-header, .left-about, .about-container p,
-  .timeline-item, .portfolio-item, .achievement-item {
+  .portfolio-item, .achievement-item {
     text-align: center;
     width: 100%;
     margin: 0 auto;
     padding: 0 1rem;
+  }
+  .timeline-item {
+    text-align: left;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+  .left-header .image {
+    height: 60%;
+    width: 75%;
   }
   /* Make sure header content is contained */
   .header-content .right-header {
@@ -983,7 +1020,7 @@ section {
   }
   .about-container .right-about {
     grid-template-columns: 1fr; /* Stack boxes in mobile view */
-    width: 90%;
+    width: 100%;
   }
 }
 @media screen and (max-width: 500px) {
@@ -1060,6 +1097,18 @@ section {
   }
   .left-header .image img {
     aspect-ratio: 1/1; /* More square on smaller screens */
+  }
+  .about-container .left-about h4 {
+    font-size: 1.7rem;
+  }
+  .about-container .left-about p {
+    padding: 1rem 0rem 1rem 0rem;
+  }
+  .about-container .right-about {
+    padding-top: 0rem;
+  }
+  .about-container {
+    padding-bottom: 0rem;
   }
 }
 @media screen and (max-width: 380px) {
