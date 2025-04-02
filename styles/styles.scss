@@ -8,13 +8,13 @@
 
 :root {
     --color-primary: #191d2b;
-    --color-secondary: #27AE60;
+    --color-secondary: #29a4e6;
     --color-white: #FFFFFF;
     --color-black: #000;
     --color-grey0: #f8f8f8;
     --color-grey-1: #dbe1e8;
     --color-grey-2: #b2becd;
-    --color-grey-3: #6c7983;
+    --color-grey-3: #d9d9d9;
     --color-grey-4: #454e56;
     --color-grey-5: #2a2e35;
     --color-grey-6: #12181b;
@@ -165,15 +165,21 @@ section {
 
 .image {
     border-radius: var(--br-sm-2);
-    height: 90%;
-    width: 68%;
-    margin-left: 4rem;
-    background-color: var(--color-black);
+    height: 100%;
+    width: 80%;
     transition: all .4s ease-in-out;
     overflow: hidden; /* Ensure content respects border radius */
+    background-color: transparent;
 }
 
-.image img {
+.left-header .image {
+    padding-left: 4rem;
+    // padding-right: 4rem;
+    height: 80%;
+    aspect-ratio: 3/4;
+}
+
+.left-header .image img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -352,7 +358,7 @@ section {
 }
 
 .timeline-item p {
-    color: var(--color-grey-2);
+    color: var(--color-grey-3);
 }
 
 /* Portfolios */
@@ -363,14 +369,27 @@ section {
     margin-top: 3rem;
 }
 
+.port-text {
+    text-align: center;
+}
+
 .portfolio-item {
     position: relative;
     border-radius: 15px;
     height: 300px; /* Fixed height */
     overflow: hidden; /* Ensure image respects container bounds */
+    justify-items: center;
 }
 
 .portfolio-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+    filter: grayscale(0); /* CHANGED: Default is color now */
+}
+
+.portfolio-item .image {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -452,6 +471,11 @@ section {
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 2rem;
     margin-top: 3rem;
+    margin-bottom: 6rem;
+}
+
+.achievements-text {
+    text-align: center;
 }
 
 .achievement-item {
@@ -461,12 +485,18 @@ section {
     overflow: hidden; /* Ensure image respects container bounds */
 }
 
+.achievement-item .image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
 .achievement-item img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     border-radius: 15px;
-    filter: grayscale(0); /* CHANGED: Default is color now */
 }
 
 .hover-item {
@@ -490,12 +520,13 @@ section {
 }
 
 .hover-item h3 {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     color: var(--color-white);
     margin-bottom: 1.5rem;
 }
 
 .hover-item p {
+    font-size: 1rem;
     color: var(--color-white);
 }
 
@@ -695,16 +726,16 @@ section {
 
 /* Light Mode */
 .light-mode {
-    --color-primary: #FFFFFF;
+    --color-primary: #fefefe;
     --color-secondary: #F56692;
     --color-white: #454e56;
     --color-black: #000;
     --color-grey0: #f8f8f8;
     --color-grey-1: #6c7983;
-    --color-grey-2: #6c7983;
+    --color-grey-2: #828c93;
     --color-grey-3: #6c7983;
-    --color-grey-4: #454e56;
-    --color-grey-5: #f8f8f8;
+    --color-grey-4: #e97c9d;
+    --color-grey-5: #ebdada;
     --color-grey-6: #12181b;
 }
 
@@ -875,6 +906,7 @@ section {
     }
 
     .left-header .image {
+        padding-left: 0rem;
         width: 40%;
         height: 80%;
         margin: 0 auto;
@@ -1021,6 +1053,10 @@ section {
 
     .section {
         padding: 2rem 1.5rem;
+    }
+
+    .contact-content-con .right-contact {
+        margin-top: 0rem;
     }
 
     .contact-content-con .right-contact .i-c-2 {
