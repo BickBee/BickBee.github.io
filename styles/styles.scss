@@ -945,6 +945,16 @@ section {
     }
 }
 
+@media screen and (max-width: 1200px) {
+    .right-header .name {
+        font-size: 1.5rem;
+    }
+
+    .right-header p {
+        font-size: 1rem;
+    }
+}
+
 @media screen and (max-width: 1070px) {
     .about-container {
         grid-template-columns: 1fr;
