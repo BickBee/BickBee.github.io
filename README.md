@@ -1,23 +1,39 @@
-# Personal Portfolio Website
+# 🌐 Nicholas Lee – Personal Portfolio Website
 
-This repository hosts the source code for my personal portfolio website. Built with HTML, CSS, and JavaScript, it provides an overview of my projects, technical skills, and professional background.
+Welcome to my personal portfolio site! 👋  
+This website serves as a hub to showcase who I am, what I've built, and what I'm passionate about as a software developer and double-degree student in Computer Science & Business 🎓.
 
-## Features
+## 🚀 What's Inside?
 
-- **Responsive Design:** Optimized for various devices and screen sizes.
-- **Project Showcase:** Highlights selected projects with descriptions and links.
-- **Contact Information:** Provides ways to get in touch.
+- 🧠 **About Me** – A brief overview of my background, education, and values.
+- 🛠️ **Projects** – Detailed sections on some of my favorite development projects.
+- 📬 **Contact** – Let's connect! Socials, email, and more.
+- 📱 **Responsive Design** – Clean and accessible across desktop, tablet, and mobile.
 
-## Technologies Used
+## 🛠️ Technologies Used
 
-- HTML
-- CSS
-- JavaScript
+- **HTML5** – Structure and semantics
+- **CSS3/SASS** – Styling and layout
+- **JavaScript** – Interactivity and animations
+- **GitHub Pages** – Hosting and deployment
 
-## Live Site
+## 💡 Purpose
 
-Visit the live site at [https://bickbee.github.io/](https://bickbee.github.io/).
+This site is not just a digital resume – it's a place where I:
+- Demonstrate design fundamentals
+- Highlight technical depth in projects
+- Provide a central way to reach me and see my evolution as a developer
 
-## License
+## 🌍 Live Website
 
-This project is licensed under the MIT License.
+Check it out here: [bickbee.github.io](https://bickbee.github.io)
+
+## 🧭 Navigation Tips
+
+Explore:
+- **Home** – Who I am
+- **Projects** – What I've built
+- **Resume** – What I’ve done
+- **Contact** – How to reach me
+
+Thanks for visiting! 🎉
