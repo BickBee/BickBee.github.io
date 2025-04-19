@@ -320,7 +320,7 @@ section {
     grid-template-columns: 1fr;
   }
 }
-/* Timeline */
+/* Timeline Info */
 .timeline {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
